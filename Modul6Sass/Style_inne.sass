@@ -1,0 +1,597 @@
+$maincolor1: #ff0000
+$maincolor2: #ffff00
+
+*
+  box-sizing: border-box
+
+
+body
+  margin: 0 auto
+  padding: 0
+
+/*Naglowek*/
+header
+  background-color: #313234
+  height: 50px
+
+nav
+  width: 100%
+
+  position: static
+  top: 10px
+  &:hover
+    display: inline-block
+
+  ul
+    text-align: center
+    padding: 0
+    margin: 0
+    font-size: 0
+    li
+      display: inline-block
+      text-align: center
+      height: 30px
+      line-height: 30px
+      margin: 0
+      padding: 0
+      width: 100%
+      font-size: 16px
+      &:hover
+        background-color: $maincolor1
+      ul
+        display: none
+        position: absolute
+        right: 0
+        left: 0
+        max-width: 1600px
+        margin: 0 auto
+        &:hover
+          display: inline-block
+        li
+          text-align: center
+          display: block
+          &:hover
+            background-color: $maincolor1
+          a
+            display: block
+            line-height: 50px
+            padding: 0 10px
+            color: #FFF
+            text-decoration: none
+            text-transform: uppercase
+            &:hover
+              color: #ffff00
+
+header div.col-m-4 img
+  width: 150px
+  height: 50px
+  float: left
+  padding: 5px
+
+header div.col-s-12 img
+  width: 150px
+  height: 40px
+  float: left
+  padding: 5px
+
+header>nav>div>div>img
+  float: left
+  padding-top: 0px
+
+.container
+  max-width: 1600px
+  margin: 0 auto
+.tlo
+  background-color: $maincolor1
+
+/*Sekcja 1*/
+.tlo_name
+  width: 100%
+  height: 60vh
+  padding-top: 20vh
+  box-sizing: border-box
+  text-align: left
+  background: url(http://d3rqhmq6itzhk2.cloudfront.net/inspiracje/media/City/gallery/default/madryt.jpg?5adfed07)
+  background-size: cover
+  background-position: center
+  overflow: hidden
+section>div>h1
+  color: #ffff00
+  font-size: 38px
+  box-sizing: border-box
+  max-width: 800px
+
+  float: right
+  background-color: rgba(34, 40, 34, 0.6)
+  padding: 10px
+
+/*Sekcja 2*/
+.narzedzia
+  margin-top: 10px
+  padding: 10px
+  text-align: center
+  color: $maincolor1
+
+.col-m-4 i
+  box-sizing: border-box
+  width: 120px
+  height: 120px
+  border-radius: 15%
+
+.col-s-12 i
+  box-sizing: border-box
+  width: 120px
+  height: 120px
+  border-radius: 15%
+
+.col-m-4 i.fa
+  font-size: 80px
+  padding: 20px
+  color: $maincolor1
+
+.col-s-12 i.fa
+  font-size: 80px
+  padding: 20px
+  color: $maincolor1
+
+i.fa-globe, i.fa-cogs, i.fa-laptop
+  background-color: #313332
+
+i.fa-globe:hover, i.fa-cogs:hover, i.fa-laptop:hover
+  background-color: #00C6E8
+  cursor: pointer
+
+h3:hover
+  color: #00C6E8
+
+.sekcja2
+  margin-top: 40px
+
+div.sekcja2 div.col-m-4 p,h3
+  padding: 10px
+
+div.sekcja2 div.col-s-12 p,h3
+  color: $maincolor1
+  padding: 10px
+
+div.sekcja2 div.row
+  color: $maincolor1
+
+/*sekcja 3-galeria*/
+i.fa
+  font-size: 80px
+  padding: 20px
+  color: #FFF
+
+.col-galeria
+  background-size: cover
+  position: relative
+
+.col-2x
+  background-size: 100% 100%
+  position: relative
+
+.col-galeria img
+  width: 100%
+  height: 200px
+
+.col-2x img
+  width: 100%
+  height: 200px
+
+.ikony
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0)
+  transition: background 1s
+  &:hover
+    background: rgba(0, 0, 0, .3)
+
+.ikony:hover > div
+  display: block
+/*pacity: 1;*/
+
+.ikony .fa
+  color: #fff
+
+.ikony > div
+  text-align: center
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  display: none
+  /*opacity: 0;
+  /*transition: opacity 1s;
+
+div.ikony div i
+  margin-right: 25px
+  cursor: pointer
+
+.row1
+  line-height: 0
+
+.col-galeria
+  width: 20%
+
+.col-2x
+  width: 40%
+
+/*Sekcja 4*/
+.okrag-0
+  box-sizing: border-box
+  margin: 0 auto
+  width: 250px
+  height: 250px
+  padding: 0
+  border-radius: 50%
+  background-size: cover
+  background-position: center
+
+.okrag-1
+  @extend .okrag-0
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Felipe_Borbon_2014.jpg/241px-Felipe_Borbon_2014.jpg)
+.okrag-2
+  @extend .okrag-0
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mariano_Rajoy_2015_%28cropped%29.jpg/243px-Mariano_Rajoy_2015_%28cropped%29.jpg)
+
+
+.okrag-3
+  @extend .okrag-0
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Rafael_Catal%C3%A1_2015_%28cropped%29.jpg/266px-Rafael_Catal%C3%A1_2015_%28cropped%29.jpg)
+
+.okrag-4
+  @extend .okrag-0
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Pedro_Morenes_September_2012_crop.jpg/274px-Pedro_Morenes_September_2012_crop.jpg)
+
+
+//[class*="okrag-"] {
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-left: 80px;
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  border-radius: 50%;
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3g9u_uEUFyrfZjhvz2fLFyFfQUHWMvQzZ8fOqcPE6DN4T8dsQ);
+  background: cover;
+  background-position: center;
+  transition-delay: 0.2s;
+
+[class*="okrag-"]:hover
+  box-sizing: border-box
+  margin: 0 auto
+  width: 250px
+  height: 250px
+  padding: 0
+  border-radius: 50%
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Spain_%28Civil%29.svg)
+  background-position: center
+  background-size: 250px 250px
+  cursor: pointer
+
+[class*="okrag-"]::before
+  box-sizing: border-box
+  margin: 0 auto
+  width: 250px
+  height: 250px
+  padding: 0
+  border-radius: 50%
+  background-color: rgba(40, 40, 40, 0.6)
+
+[class*="okrag-"] > p
+  color: #000
+  font-size: 25px
+  box-sizing: border-box
+  width: 250px
+  height: 250px
+  border-radius: 50%
+  text-align: center
+  padding-top: 100px
+  opacity: 0
+  &hover
+    color: #000
+    font-size: 25px
+    box-sizing: border-box
+    width: 250px
+    height: 250px
+    border-radius: 50%
+    text-align: center
+    padding-top: 100px
+    opacity: 1
+    cursor: pointer
+
+div.sekcja4 h2
+  color: $maincolor1
+  text-align: center
+
+/*Sekcja 5*/
+.col-m-4 > img
+  width: 200px
+  height: 100%
+
+.col-s-8 > img
+  width: 200px
+  height: 100%
+
+.sekcja5
+  background-color: #b3193e
+
+.col-m-6 > p
+  padding: 50px
+  color: #ffff00
+
+div.sekcja5 div.col-s-12 > p
+  padding: 50px
+  color: #ffff00
+
+.col-m-8 > h2
+  color: #ffff00
+
+.col-s-8 > h2
+  color: #ffff00
+/*skecja 6*/
+
+.sekcja6>div>div>h3
+  color: $maincolor1
+
+/* Skecja 7*/
+
+.sekcja7
+  background-color: #b3193e
+  text-align: left
+  padding: 5px
+
+i.fa-youtube, i.fa-facebook, i.fa-google-plus, i.fa-futbol-o, i.fa-instagram, i.fa-twitter
+  background-color: #ffff00
+
+
+div.sekcja7 div i.fa
+  box-sizing: border-box
+  width: 40px
+  height: 40px
+  border-radius: 0
+  font-size: 20px
+  padding-top: 10px
+  padding-left: 10px
+  margin: 5px
+  color: #C9130E
+
+div.col-12 p
+  text-align: left
+  padding: 5px
+
+div.sekcja7 div.row
+  text-align: left
+  padding: 5px
+
+div.sekcja7 div.col-m-6
+  text-align: right
+  padding: 0px
+
+div.sekcja7 div.col-s-12
+  text-align: right
+  padding: 0px
+
+/*stopka*/
+footer
+  background-color: #C9130E
+  height: 50px
+
+div.flag-2
+  box-sizing: border-box
+  height: 50px
+  background-color: #ffff00
+  color: $maincolor1
+
+/*kolumny*/
+.row
+  color: #ffff00
+
+
+
+[class*="col-"]
+  float: left
+  //padding: 1px;
+  //border: 1px solid red;
+  text-align: center
+
+.col-1
+  width: 8.33%
+.col-2
+  width: 16.66%
+.col-3
+  width: 25%
+.col-4
+  width: 33.33%
+.col-5
+  width: 41.66%
+.col-6
+  width: 50%
+.col-7
+  width: 58.33%
+.col-8
+  width: 66.66%
+.col-9
+  width: 75%
+.col-10
+  width: 83.33%
+.col-11
+  width: 91.66%
+.col-12
+  width: 100%
+
+.clearfix::before, .clearfix::after
+  content: ""
+  display: table
+  clear: both
+
+
+
+
+
+@media (max-width: 760px)
+/* For tablets: */
+.col-s-1
+  width: 8.33%
+.col-s-2
+  width: 16.66%
+.col-s-3
+  width: 25%
+.col-s-4
+  width: 33.33%
+.col-s-5
+  width: 41.66%
+.col-s-6
+  width: 50%
+.col-s-7
+  width: 58.33%
+.col-s-8
+  width: 66.66%
+.col-s-9
+  width: 75%
+.col-s-10
+  width: 83.33%
+.col-s-11
+  width: 91.66%
+.col-s-12
+  width: 100%
+
+header nav div div img
+  display: none
+
+ul>li
+  min-height: 30px
+  line-height: 30px
+  margin: 0
+  padding: 0
+  width: 100%
+  font-size: 16px
+
+.low_resolution
+  display: inline-block
+
+div.flag-s-2
+  box-sizing: border-box
+  height: 50px
+  background-color: $maincolor1
+  color: #ffff00
+
+.col-2x
+  width: 100%
+  padding: 12px
+  float: left
+  text-align: center
+
+.col-galeria
+  width: 100%
+  padding: 12px
+  float: left
+  text-align: center
+
+[class*="col-"]
+  padding: 5px
+  float: left
+  text-align: center
+
+section>div>h1
+  font-size: 25px
+
+/*
+    [class*="col-"] {
+        width: 100%;
+        padding: 12px;
+        float:left;
+    }*/
+
+
+@media (min-width: 760px) and (max-width: 1050px)
+header nav div div img
+  display: none
+
+
+.low_resolution
+  display: inline-block
+
+div.flag-s-2
+  box-sizing: border-box
+  height: 50px
+  background-color: $maincolor1
+  color: #ffff00
+
+.col-2x
+  width: 50%
+  padding: 12px
+  float: left
+  text-align: center
+
+.col-galeria
+  width: 50%
+  padding: 12px
+  float: left
+  text-align: center
+
+[class*="col-"]
+  padding: 5px
+  float: left
+  text-align: center
+
+[class*="col-"]
+  padding: 5px
+  float: left
+  text-align: center
+
+.col-p-1
+  width: 8.33%
+.col-p-2
+  width: 16.66%
+.col-p-3
+  width: 25%
+.col-p-4
+  width: 33.33%
+.col-p-5
+  width: 41.66%
+.col-p-6
+  width: 50%
+.col-p-7
+  width: 58.33%
+.col-p-8
+  width: 66.66%
+.col-p-9
+  width: 75%
+.col-p-10
+  width: 83.33%
+.col-p-11
+  width: 91.66%
+.col-p-12
+  width: 100%
+
+@media (min-width: 1050px)
+/* For desktop: */
+.col-m-1
+  width: 8.33%
+.col-m-2
+  width: 16.66%
+.col-m-3
+  width: 25%
+.col-m-4
+  width: 33.33%
+.col-m-5
+  width: 41.66%
+.col-m-6
+  width: 50%
+.col-m-7
+  width: 58.33%
+.col-m-8
+  width: 66.66%
+.col-m-9
+  width: 75%
+.col-m-10
+  width: 83.33%
+.col-m-11
+  width: 91.66%
+.col-m-12
+  width: 100%
+
